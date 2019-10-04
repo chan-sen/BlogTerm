@@ -28,5 +28,8 @@ class Database(object):
 
     @staticmethod
     def delete_one(collection, query):
-        print(Database.DATABASE[collection])
-        Database.DATABASE[collection].delete_one(query)
+        return Database.DATABASE[collection].delete_one(query)
+
+    @staticmethod
+    def delete_many(collection, query):
+        pass
